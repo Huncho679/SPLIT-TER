@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import InputDisplay from "./features/input/InputDisplay";
+import OutputDisplay from "./features/output/OutputDisplay";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="text-center mt-[200px] uppercase tracking-[10px] text-3xl text-teal-500 font-bold">
+        <p>spli</p>
+        <p>tter</p>
+      </div>
+
+      <div className="flex gap-[50px] mx-auto w-[1000px] h-[500px] bg-white rounded-3xl mt-[100px] items-center justify-center">
+        <InputDisplay />
+        <OutputDisplay />
+      </div>
+    </>
   );
 }
-
-export default App;
